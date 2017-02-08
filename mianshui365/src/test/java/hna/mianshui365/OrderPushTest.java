@@ -1,38 +1,20 @@
 package hna.mianshui365;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
+import org.apache.http.util.EntityUtils;
+import org.testng.AssertJUnit;
 
-/**
- * Unit test for simple App.
- */
-public class OrderPushTest 
-    extends TestCase
+public class OrderPushTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public OrderPushTest( String testName )
+
+    public OrderPushTest()
     {
-        super( testName );
+    	OrderPush.orderPush();
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
+    @Test
+	public void testApp()
     {
-        return new TestSuite( OrderPushTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        AssertJUnit.assertTrue( true );
     }
 }

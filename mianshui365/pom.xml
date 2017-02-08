@@ -27,6 +27,15 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.3</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
+		</dependency>
 	</dependencies>
 </project>
