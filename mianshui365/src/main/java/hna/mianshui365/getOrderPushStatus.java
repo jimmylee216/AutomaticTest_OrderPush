@@ -15,9 +15,16 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 import java.io.BufferedReader;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+/**
+ * 发送请求
+ * 
+ * @author Jimmy Lee
+ * @version 1.0 2017/2/9
+ * @return 返回响应报文
+ **/
 
 public class getOrderPushStatus {
 	private String url = null;

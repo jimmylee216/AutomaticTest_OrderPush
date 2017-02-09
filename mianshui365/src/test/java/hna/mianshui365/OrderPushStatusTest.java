@@ -13,6 +13,13 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
 
+/**
+ * 测试用例
+ * 
+ * @author Jimmy Lee
+ * @version 1.0 2017/2/9
+ **/
+
 public class OrderPushStatusTest{
 	public String httpResult = null;
 	public String head = null;
