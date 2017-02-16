@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>hna</groupId>
@@ -87,6 +87,7 @@
 
 	<build>
 		<plugins>
+			
 			<!-- 添加插件 关联testNg.xml -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -94,7 +95,8 @@
 				<version>2.17</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>res/${xmlFileName}</suiteXmlFile>
+						<suiteXmlFile>${xmlFileName}</suiteXmlFile>
+						  <!-- <suiteXmlFile>testng.xml</suiteXmlFile>  -->
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

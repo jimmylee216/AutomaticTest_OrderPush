@@ -35,7 +35,7 @@ public class getOrderPushStatus {
 
 	public String getHttpRespone(String orderNumber) {
 		String httpResults = null;
-		url = ("http://10.167.7.56:20881/order/push");
+		url = ("http://10.167.7.201:20881/order/push");
 		String params = "{\"body\":{ \"inParams\": [ { \"orderSn\": \"" + orderNumber + "\" }]}}";
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		HttpPost httppost = new HttpPost(url);
