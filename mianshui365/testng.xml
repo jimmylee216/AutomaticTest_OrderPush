@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG 项目报告">
-	<parameter name="orderNumber" value="2017021593331" />
+	<parameter name="orderNumber" value="${orderNumber}" />
 	
 	<test name="Test">
 		<classes>
